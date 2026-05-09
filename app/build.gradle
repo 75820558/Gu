@@ -3,17 +3,13 @@ plugins {
 }
 android {
     namespace 'com.gesture.overlay'
-    compileSdk 34
+    compileSdk 33
     defaultConfig {
         applicationId "com.gesture.overlay"
         minSdk 26
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0"
-    }
-    buildTypes {
-        debug { }
-        release { minifyEnabled false }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -22,5 +18,4 @@ android {
 }
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.mediapipe:tasks-vision:0.10.9'
 }
